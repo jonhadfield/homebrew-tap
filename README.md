@@ -8,4 +8,4 @@ brew install jonhadfield/tap/orange
 
 | Formula | Description |
 | ------- | ----------- |
-| [orange](https://github.com/jonhadfield/orange) | Terminal reader for Hacker News |
+|  [orange](https://github.com/jonhadfield/orange) | Terminal reader for Hacker News |
