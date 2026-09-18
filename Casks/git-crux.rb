@@ -7,25 +7,25 @@ cask "git-crux" do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/git-crux"], must_succeed: false
   end
 
-  version "1.1.1"
+  version "1.2.0"
 
   on_macos do
     on_arm do
-      sha256 "65024a092017f5272f255023c67c8f9642191d62283979f6299457c28f0d0653"
+      sha256 "490db9eb695baa49badc9e52deca3637e11931896dad5fa9eb4e6554f0f848c3"
       url "https://github.com/jonhadfield/git-crux/releases/download/v#{version}/git-crux_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "281dbc519bd8759659ae74dfa78af8ad8454181981a7694ded860e18ad406044"
+      sha256 "0747d629acdedccec598c90788b6e5cec48aa455e995c17c1c034ba9b2cefb07"
       url "https://github.com/jonhadfield/git-crux/releases/download/v#{version}/git-crux_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "ace157df65bb72f090fbedb8f934327d2f73c46356c2ac31cbfb6877bb5f1051"
+      sha256 "6cfcd51697b4ba893144728787b47a19d974cc5e250a7f70d2b5689379a4f760"
       url "https://github.com/jonhadfield/git-crux/releases/download/v#{version}/git-crux_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "e87da6a94c66dee8325ddefb9626a9ee75420e0a788910e78185685640200186"
+      sha256 "1462e717e3c4a435e277f1474dfb25e03fe2c30739ceb3c3dca1e315346eeda6"
       url "https://github.com/jonhadfield/git-crux/releases/download/v#{version}/git-crux_linux_amd64.tar.gz"
     end
   end
