@@ -7,19 +7,19 @@ cask "sn-cli" do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/sn"], must_succeed: false
   end
 
-  version "0.6.0"
+  version "0.7.0"
 
   on_macos do
-    sha256 "a75558f679dca7a5b7c48b3f928719f85e643577f6ae9a9574aa5822d659ee74"
+    sha256 "7acc51057a699d74ab1c8ef8880bb8f2ce8476d479fff92681f4f0da11d373f3"
     url "https://github.com/jonhadfield/sn-cli/releases/download/#{version}/sn-cli_Darwin_universal.tar.gz"
   end
   on_linux do
     on_arm do
-      sha256 "4a8b55a2ea908b298a8109a185f9812f55a505a423016f5fba763900111d9028"
+      sha256 "be9764b930cec7e5e1fe94bac25584ce0aa84e3a9d8c3c456b6be405ed17e6d5"
       url "https://github.com/jonhadfield/sn-cli/releases/download/#{version}/sn-cli_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "effe3d9900b3e4785137e687d35aec792dc50999cac86b769c9cd35685b8bd41"
+      sha256 "204cca74f0d40f665880061c7370036cb80549934306e64526d09692611bc122"
       url "https://github.com/jonhadfield/sn-cli/releases/download/#{version}/sn-cli_Linux_x86_64.tar.gz"
     end
   end
