@@ -7,19 +7,19 @@ cask "sn-dotfiles" do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/sn-dotfiles"], must_succeed: false
   end
 
-  version "0.3.0"
+  version "0.4.0"
 
   on_macos do
-    sha256 "1e47765575adb9d72a5b40a0375f27bb0ddad127b1029a20c194b74d3ae19e38"
+    sha256 "9423119298687921fea4fc59edd886f3a82df8573630b21b29d4cdca71baa8c3"
     url "https://github.com/jonhadfield/sn-dotfiles/releases/download/#{version}/sn-dotfiles_Darwin_universal.tar.gz"
   end
   on_linux do
     on_arm do
-      sha256 "ee357315ac445c421b32f0d39289a258619cacb5e919ddd39630447bcc91c8ae"
+      sha256 "ddab9a822d31dd368766134167c2d90a4cbd4e2bcb32a4e2f0ca54c9ad0c4945"
       url "https://github.com/jonhadfield/sn-dotfiles/releases/download/#{version}/sn-dotfiles_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "89270760922b96f3a6ab55f89b02c4b47840bfb70006795f6a18a2a86cdff7ac"
+      sha256 "866ee97dc3efaed48baa5afc5201f37df32e0660fdad4d7fdab882be5d05c042"
       url "https://github.com/jonhadfield/sn-dotfiles/releases/download/#{version}/sn-dotfiles_Linux_x86_64.tar.gz"
     end
   end
