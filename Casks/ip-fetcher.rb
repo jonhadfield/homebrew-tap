@@ -7,25 +7,25 @@ cask "ip-fetcher" do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/ip-fetcher"], must_succeed: false
   end
 
-  version "0.0.45"
+  version "0.0.46"
 
   on_macos do
     on_arm do
-      sha256 "c00110ab81f40141e63239c9dd2e244d68a18f08e338aaeafdcd77cdf8d6b34e"
+      sha256 "3fce03edafbfb4cc5e5031628bbe5501baba9214430e22fb905ec9d67d860e82"
       url "https://github.com/jonhadfield/ip-fetcher/releases/download/v#{version}/ip-fetcher_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "a9edd65e2b0f21a52af0b6d0cc9db86d40e154240f7bdf2f62b6824ce8afb27b"
+      sha256 "909401ed1f6e6d48105274faecd7a4b48d461c7c4c756ce03ee3f699d2e9c71b"
       url "https://github.com/jonhadfield/ip-fetcher/releases/download/v#{version}/ip-fetcher_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "6947255d5a1747a6b8f5732986471b47151563d0ef5669e86b5770bba9a94590"
+      sha256 "239adc681cbdd61d42e6fdaca2765dd2550aa9dc274c85519932f2129c7de0ad"
       url "https://github.com/jonhadfield/ip-fetcher/releases/download/v#{version}/ip-fetcher_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "33de06c6a5dd0cdccdc5e4721aef6d79f97f01f7fed95864e95605c23a2a4da4"
+      sha256 "87ec6d60ba38be681133878d5df0061695ab7be159e1210f4b93c0c12d157193"
       url "https://github.com/jonhadfield/ip-fetcher/releases/download/v#{version}/ip-fetcher_linux_amd64.tar.gz"
     end
   end
