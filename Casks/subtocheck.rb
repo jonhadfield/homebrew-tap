@@ -6,25 +6,25 @@ cask "subtocheck" do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/subtocheck"], must_succeed: false
   end
 
-  version "0.0.10"
+  version "0.0.11"
 
   on_macos do
     on_arm do
-      sha256 "690f6ea215df1d5f7085456324dc367aaae144b5a1049b692e13256beee11d78"
+      sha256 "29edd150d5b4a0ca83e98ca305a25e9a57860f997722b8b69162de2b99ff2f40"
       url "https://github.com/jonhadfield/subtocheck/releases/download/v#{version}/subtocheck_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "799e7e5156818b3a1a4050dcf3ee835675680a2b5488cd0191eb343e92eccd46"
+      sha256 "5efe6f3c92f1e8d83f8336dd6d1758bd47d3acb3216156eeff9f1a09621d5510"
       url "https://github.com/jonhadfield/subtocheck/releases/download/v#{version}/subtocheck_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "c058e568c9ff176ccfd340272e3572182ff3cae030a56c3e7d16aa7345deb8ad"
+      sha256 "b82382789dac939c4812800c9355d54a708bf536380d473900a15a31dac6082d"
       url "https://github.com/jonhadfield/subtocheck/releases/download/v#{version}/subtocheck_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "7b79514d710a56be05150128f7e08eae58ab291fa527bd1bfc8d3f25e2fb179b"
+      sha256 "0967da17a9ec6f03688683a3bc404e2fe0ced71f1b38d6e2b60471114df35ac8"
       url "https://github.com/jonhadfield/subtocheck/releases/download/v#{version}/subtocheck_linux_amd64.tar.gz"
     end
   end
