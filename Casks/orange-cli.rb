@@ -7,25 +7,25 @@ cask "orange-cli" do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/orange"], must_succeed: false
   end
 
-  version "0.5.7"
+  version "0.5.8"
 
   on_macos do
     on_arm do
-      sha256 "f6c0da638928e888bf3a29ee97b6ec2bf7d30caee33b038c3192be0b6567a2da"
+      sha256 "cf60db25a4c4b51d84e4e0f183324aae4f18db2e00db31bcb53aaa746b63d3dc"
       url "https://github.com/jonhadfield/orange/releases/download/v#{version}/orange_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "e8153fcd1e5bdfa30a7d3cf763aec6f03a56eadd43a2f71822d57fb2ce5ea147"
+      sha256 "5129c1a7e1847e3ba76fc442eb08f921594ea55a51b30e0f8b4b27f5a2ecf83f"
       url "https://github.com/jonhadfield/orange/releases/download/v#{version}/orange_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "af5aaa91c2a2158be2101283853f69a86a1091f32e441e00817813e1fd160d6a"
+      sha256 "e20e50c797f9d15be693b12f3e63d6a2b91417b94af4c00e80f0e2a1c63b9398"
       url "https://github.com/jonhadfield/orange/releases/download/v#{version}/orange_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "485a2d416e8633dc64fe38e6998765665e6b13633da05758d6e283c3e41f1939"
+      sha256 "7fab7b2304699d9e6ba942f174b610a6eefe1ce1b2d64a223ce4cee1393c0dbd"
       url "https://github.com/jonhadfield/orange/releases/download/v#{version}/orange_linux_amd64.tar.gz"
     end
   end
