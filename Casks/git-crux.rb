@@ -7,31 +7,31 @@ cask "git-crux" do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/git-crux"], must_succeed: false
   end
 
-  version "1.5.0"
+  version "1.5.1"
 
   on_macos do
     on_arm do
-      sha256 "211169032431da120e7885986cff5d4f190f7dbcaf09137012b72f1a84a18703"
+      sha256 "73a692733bb4f2726c1a354773d192ad0c1d85db8bcc7ad448ec31b232663aa2"
       url "https://github.com/jonhadfield/git-crux/releases/download/v#{version}/git-crux_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "100e11c9ea6f3b73e6188e881e7cf5bb469ec48258d4db80588501c46ba1e237"
+      sha256 "c77eafe7563babd61b771b0cfc2d0cc7b51efea9ef50a853934517855abf84ce"
       url "https://github.com/jonhadfield/git-crux/releases/download/v#{version}/git-crux_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "e799e18cec69fbb6cc4fcb4daf039f78caa2caa236ec58540b8798a6c1856032"
+      sha256 "262a432b5b7c3e9fd3320e6777454f4e85cb3f67df3064e630288338a44e5774"
       url "https://github.com/jonhadfield/git-crux/releases/download/v#{version}/git-crux_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "27a3d9ce1333a10d6029be6bdb6271f40fdaf95b013f7fc4c282cb62d430bb2f"
+      sha256 "fa9db76a9e298db891ea871636388c21e2115ee5c73f76ebb390393810fee562"
       url "https://github.com/jonhadfield/git-crux/releases/download/v#{version}/git-crux_linux_amd64.tar.gz"
     end
   end
 
   name "git-crux"
-  desc "AI commit-message reviewer that checks your message against the staged diff"
+  desc "AI commit-message reviewer; on-device with Apple fm on macOS 27, or OpenAI / a local model"
   homepage "https://github.com/jonhadfield/git-crux"
 
   livecheck do
