@@ -11,21 +11,21 @@ cask "subnets" do
 
   on_macos do
     on_arm do
-      sha256 "339e94c3a1ea948ba530455e16cb521d1b9b783edea827ad2139af9ebe88ac19"
+      sha256 "5aa77b215cb585fb222548ab870e4b3ff984cc9528bec2e84b63e74d5b444d4f"
       url "https://github.com/jonhadfield/subnets/releases/download/v#{version}/subnets_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "2038799aa29f848100f81b2b5f041a9983440983bbbca2befd97e1667db03204"
+      sha256 "ae0374b9f4c2f47526c99d8ab29723d668ec807a53a3eaccbec6354acfa22408"
       url "https://github.com/jonhadfield/subnets/releases/download/v#{version}/subnets_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "01104c2363162b2b364aa969755856fc15574290bdfa1f60dec6b37f1192d432"
+      sha256 "5dad839070f6144b9e005bc4b9a36d7d2366fdfa4db72f821740e4ab24b82fa0"
       url "https://github.com/jonhadfield/subnets/releases/download/v#{version}/subnets_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "7326c5f65143dce08ba62b8d565170bb5f1c21bffe235577be2b18cb4fb57971"
+      sha256 "b3c2253678c2c416fd30b023ae898ac924e3d8126711bd0ba39936a41ea78a6b"
       url "https://github.com/jonhadfield/subnets/releases/download/v#{version}/subnets_linux_amd64.tar.gz"
     end
   end
