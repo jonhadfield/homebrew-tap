@@ -7,25 +7,25 @@ cask "subnets" do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/subnets"], must_succeed: false
   end
 
-  version "0.1.4"
+  version "0.1.5"
 
   on_macos do
     on_arm do
-      sha256 "a50c0c760ca2456c1a5bcabbbde80c313cf7dd0dc52cd8f8c3123ca93037adc1"
+      sha256 "4d17b553ba84cc6dc9aaff38728de93d264f26827f3a7ba4628459a9e3e65a3c"
       url "https://github.com/jonhadfield/subnets/releases/download/v#{version}/subnets_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "9f1c9c5b79f3710ebdb4307550bd43aa1e19148956749f3cb53f557ea57071c0"
+      sha256 "1a3a86e19193776da0f75aaf3507918d6cb1359ffcd504aa2bc22d1fd5385ee4"
       url "https://github.com/jonhadfield/subnets/releases/download/v#{version}/subnets_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "1c0630da4bdaa05a8065b4d79c4d9db375d86d1eb2274d067c903aa571013ebc"
+      sha256 "b9a7635bb018870b0bb1f5f8bbae7dd106fbb5a8b424081e3e3e6b6d12cea61f"
       url "https://github.com/jonhadfield/subnets/releases/download/v#{version}/subnets_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "22a9457ee165911f6fe01a4b3465d95e3f6f7c413700d7bc950c7a826ad5ea91"
+      sha256 "117da25dbd309bc73a621da24f55f62d4850731343bf9940fd09e387be3fbeb1"
       url "https://github.com/jonhadfield/subnets/releases/download/v#{version}/subnets_linux_amd64.tar.gz"
     end
   end
